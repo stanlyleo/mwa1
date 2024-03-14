@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Bus Ticket Booking</title>
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            background-color: #f1f1f1;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            font-size: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navigation {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navigation-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            margin: 0 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navigation-link:hover {
+            background-color: #555;
+        }
+
+        .welcome-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://www.trailercraft.com/wp-content/uploads/IMG_0729-scaled.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .welcome-text {
+            color: white;
+            font-size: 36px;
+            text-shadow: 2px 2px #000;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Online Bus Ticket Booking</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="booking.html" class="navigation-link">Home</a></li>
+                <li><a href="book.html" class="navigation-link">Ticket Booking</a></li>
+                <li><a href="about.html" class="navigation-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="welcome-text">
+            Welcome to our website
+        </div>
+    </section>
+</body>
+
+</html>

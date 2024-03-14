@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="booking.html" class="navigation-link">Home</a></li>
+                <li><a href="book.html" class="navigation-link">Book Ticket</a></li>
+                <li><a href="about.html" class="navigation-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="booking-form-container">
+            <h2>Booking Form</h2>
+
+            <form id="bookingForm" action="confirmation.html" method="post">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" >
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+
+                <div class="form-group gender-input">
+                    <label for="gender" class="gender-label">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="source">Starting Location:</label>
+                    <select id="source" name="source">
+                        <option value="Airport">Airport</option>
+                        <option value="Train Station">Train Station</option>
+                        <option value="Bus Terminal">Bus Terminal</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <select id="destination" name="destination">
+                        <option value="Hotel">Hotel</option>
+                        <option value="Residence">Residence</option>
+                        <option value="Office">Office</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time">
+                </div>
+
+                <div class="form-group">
+                    <label for="seats">Number of Seats:</label>
+                    <select id="seats" name="seats">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" cols="50"></textarea>
+                </div>
+
+                
+                <div class="form-group">
+                    <label>Additional Services:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="extraLuggage" name="extraLuggage">
+                        <label for="extraLuggage">Extra Luggage</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="specialAssistance" name="specialAssistance">
+                        <label for="specialAssistance">Special Assistance</label>
+                    <div class="form-group buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
